@@ -47,3 +47,11 @@
 
 - Type: is the number of operations we are performing
 - Elements: number of inputs
+
+
+### Simplify Big O
+1. Focus on Scalability
+2. Consider Worst Case Scenario
+3. Remove all possible constants
+4. Consider different variable for different inputs
+5. Remove all non-dominants
