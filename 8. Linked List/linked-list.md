@@ -89,3 +89,20 @@
     </table>
   </div>
 </dv>
+
+<div>
+  <div>
+    <table>
+      <tr>
+        <td>
+          3
+        </td>
+        <td>
+          <sup>
+           7
+          </sup>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
