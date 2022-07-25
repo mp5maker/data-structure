@@ -10,6 +10,7 @@ class QueueLL {
     this.head = null
   }
 
+  // O(n)
   enqueue(val) {
     const newNode = new Node(val)
     if (!this.head) {
@@ -23,6 +24,7 @@ class QueueLL {
     }
   }
 
+  // O(1)
   dequeue() {
     if (!this.head) {
       return null
@@ -34,6 +36,7 @@ class QueueLL {
     }
   }
 
+  // O(1)
   peek() {
     if (!this.head) {
       return null
