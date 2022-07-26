@@ -45,3 +45,7 @@ yellow => 0
 
 * blue value and yellow value are saved in linked list
 * Then it becomes O(n) for blue and yellow key
+* Access O(1)
+* Search O(1)
+* Insert O(n)
+* Delete O(n)
