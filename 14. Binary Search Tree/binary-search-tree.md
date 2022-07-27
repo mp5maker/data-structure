@@ -20,3 +20,8 @@
 We have two options
 * Highest value from the left subtree
 * Lowest value from the right subtree
+
+
+## Automatic Balancing the unbalanced tree
+* Adelson-Vekskii Landis (AVL)
+* Red Black Tree
