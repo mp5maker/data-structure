@@ -13,4 +13,10 @@
 ### Deletion can be three types
 * O child => O(logn)
 * 1 child => O(logn)
-* 2 child => O(logn)
+* 2 child => O(logn) => This is little bit complicated
+
+
+#### For  2 child Deletion
+We have two options
+* Highest value from the left subtree
+* Lowest value from the right subtree
