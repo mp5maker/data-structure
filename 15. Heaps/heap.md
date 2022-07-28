@@ -13,3 +13,14 @@
 3. Min Heap (Minimum to maximum)
 
 Search is not recommended in Heap
+Add in the end, from left and then swap
+
+### Insert in Max Heap (nlog(n))
+* Insert it at the very end on left tree.
+* Then swap it with its intermediate parent by comparing which one is greater
+* Number of swap log(n)
+
+
+### Delete in Max Heap (nlog(n)) [Heap Sort]
+* Swap last element and root node
+* Compare childs which one is greater and swap
