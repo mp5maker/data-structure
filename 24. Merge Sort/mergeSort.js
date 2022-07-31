@@ -34,5 +34,5 @@ const mergeSort = (arr) => {
 }
 
 const numList = [4, 5, 6, 1, 3, 7, 2]
-// Complexity nlog(n)
+// Complexity O(n log n)
 console.log(mergeSort(numList))

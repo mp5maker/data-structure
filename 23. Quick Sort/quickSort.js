@@ -31,6 +31,6 @@ const quickSort = (arr) => {
   return helper(arr);
 };
 
-// Complexity nlog(n)
+// Complexity O(nlog(n))
 const numList = [4, 6, 1, 5, 3, 7, 2];
 console.log(quickSort(numList));
