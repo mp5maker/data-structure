@@ -1,7 +1,7 @@
 const quickSort = (arr) => {
   const helper = (newArr) => {
     if (newArr.length <= 1) return newArr;
-    const lengthOfArray = newArr.length
+    const lengthOfArray = newArr.length;
     let leftIndex = 1;
     let rightIndex = lengthOfArray === 2 ? 1 : lengthOfArray - 1;
     const pivotValue = newArr[0];
