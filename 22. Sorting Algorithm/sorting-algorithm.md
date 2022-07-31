@@ -12,9 +12,9 @@ distinct meanings:
 * Advanced
 
 #### Elementary
-* Bubble Sort
-* Selection Sort
-* Insertion Sort
+* Bubble Sort => max value to the end, reduce the arr size from the end
+* Selection Sort => min value to the end, swap value with end and start, reduce the arr size from the start
+* Insertion Sort => from the index, sort from right to left
 
 #### Advanced
 * Merge Sort
