@@ -18,6 +18,22 @@ class BinaryTree {
     this.preOrder(start.right, traversal)
     return traversal
   }
+
+  inOrder(start, traversal=[]) {
+    if (start == null) return
+    this.inOrder(start.left, traversal)
+    traversal.push(start.val)
+    this.inOrder(start.right, traversal)
+    return traversal
+  }
+
+  postOrder(start, traversal=[]) {
+    if (start == null) return
+    this.postOrder(start.left, traversal)
+    this.postOrder(start.right, traversal)
+    traversal.push(start.val)
+    return traversal
+  }
 }
 
 const tree = new BinaryTree();
@@ -30,6 +46,8 @@ tree.root.right.left = new Node(8);
 tree.root.right.right = new Node(9);
 console.log(tree.root);
 console.log("preOrder", tree.preOrder(tree.root));
+console.log("inOrder", tree.inOrder(tree.root));
+console.log("postOrder", tree.postOrder(tree.root));
 
 // Depth First Search
 //               3
