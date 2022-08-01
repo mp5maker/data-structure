@@ -18,6 +18,7 @@ D    E   F
 * PreOrder
 * InOrder
 * PostOrder
+* Complexity will be O(n)
 
 ### Pre Order
 * Root Left Right
