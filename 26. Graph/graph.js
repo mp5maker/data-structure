@@ -111,7 +111,9 @@ node4.adjacentList.push(node7);
 
 const breadthFirstNode = node1.clone();
 const depthFirstNode = node1.clone();
+// Complexity Time O(Vertex+Edge), Space Complexity (V)
 console.log(new Graph().breadthFirstSearch(breadthFirstNode));
+// Complexity Time O(Vertex+Edge) Space Complexity (V)
 console.log(new Graph().depthFirstSearch(depthFirstNode));
 
 // Graph
