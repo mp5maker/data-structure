@@ -52,11 +52,13 @@ class Graph {
     while(queue.size()) {
       let currentNode = queue.dequeue()
       travel.push(currentNode.value)
-      if (!currentNode.visited) currentNode.visited = true
-      const neighbors = currentNode.adjacentList
-      for (let neighbor of neighbors) {
-        if (!neighbor.visited) {
-          queue.enqueue(neighbor)
+      if (!currentNode.visited) {
+        currentNode.visited = true;
+        const neighbors = currentNode.adjacentList
+        for (let neighbor of neighbors) {
+          if (!neighbor.visited) {
+            queue.enqueue(neighbor)
+          }
         }
       }
     }
