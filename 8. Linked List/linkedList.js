@@ -47,10 +47,6 @@ class SinglyLinkedList {
       let counter = 0;
       while (counter < index) {
         prev = current;
-        console.log(
-          "🚀 ~ file: linkedList.js ~ line 49 ~ SinglyLinkedList ~ insertMiddle ~ prev",
-          prev
-        );
         current = current.next;
         counter++;
       }
@@ -99,6 +95,18 @@ class SinglyLinkedList {
       prev.next = current.next
     }
   }
+
+  reverse() {
+    let current = this.head
+    let prev = null
+    while(current) {
+      const next = current.next
+      current.next = prev
+      prev = current
+      current = next
+    }
+    return prev
+  }
 }
 
 const SLL = new SinglyLinkedList();
@@ -111,3 +119,4 @@ SLL.deleteStart(); // 10 -> 1 -> 3 -> 4
 SLL.deleteEnd(); // 10 -> 1 -> 3
 SLL.deleteMiddle(1); // 10 -> 1 -> 3
 console.log(SLL.head); // 10 -> 3
+console.log(SLL.reverse()) // 3 -> 10
