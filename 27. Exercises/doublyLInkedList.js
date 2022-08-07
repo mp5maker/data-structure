@@ -92,8 +92,10 @@ class DoublyLinkedList {
       let current = this.head.next;
       if (current) current.prev = null;
       this.head = current;
-    } else if (current === this.size - 1) {
-      if (prev) prev.next = null;
+    } else if (index === this.size - 1) {
+      let current = this.tail.prev
+      current.next = null
+      this.tail = current
     } else {
       let current = this.head;
       let prev = null;
@@ -115,30 +117,30 @@ dll.insertAtHead(3);
 dll.insertAtHead(1);
 dll.insertAtTail(4);
 
-console.log(dll.head);
-console.log(dll.tail);
-console.log("+++++++++++");
+// console.log(dll.head);
+// console.log(dll.tail);
+// console.log("+++++++++++");
 
-console.log("Insert At Index<<<<");
-dll.insertAtIndex(1, 2);
-console.log(dll.head);
-console.log(dll.tail);
-console.log(">>>>");
+// console.log("Insert At Index<<<<");
+// dll.insertAtIndex(1, 2);
+// console.log(dll.head);
+// console.log(dll.tail);
+// console.log(">>>>");
 
-console.log("Delete At head <<<<");
-dll.deleteAtHead();
-console.log(dll.head);
-console.log(dll.tail);
-console.log(">>>>");
+// console.log("Delete At head <<<<");
+// dll.deleteAtHead();
+// console.log(dll.head);
+// console.log(dll.tail);
+// console.log(">>>>");
 
-console.log("Delete At Tail <<<<");
-dll.deleteAtTail();
-console.log(dll.head);
-console.log(dll.tail);
-console.log(">>>>");
+// console.log("Delete At Tail <<<<");
+// dll.deleteAtTail();
+// console.log(dll.head);
+// console.log(dll.tail);
+// console.log(">>>>");
 
-console.log("Delete At Index <<<<");
-dll.deleteAtIndex(1);
-console.log(dll.head);
-console.log(dll.tail);
-console.log(">>>>");
+// console.log("Delete At Index <<<<");
+// dll.deleteAtIndex(1);
+// console.log(dll.head);
+// console.log(dll.tail);
+// console.log(">>>>");
