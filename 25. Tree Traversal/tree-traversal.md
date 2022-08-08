@@ -34,3 +34,5 @@ D    E   F
 * Left Right Root
 * DEBFCA
 * Trick is to check (last time)
+
+![Tree Traversal](./tree-traversal.png)

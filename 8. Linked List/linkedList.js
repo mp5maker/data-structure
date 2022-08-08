@@ -96,6 +96,7 @@ class SinglyLinkedList {
     }
   }
 
+  // O(n)
   reverse() {
     let current = this.head
     let prev = null
